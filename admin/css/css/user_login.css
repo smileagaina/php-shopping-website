@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            font: 16px/20px microsft yahei;
+        }
+
+        .wrap {
+            width: 100%;
+            padding: 40px 0;
+            /*position: fixed;*/
+            top: 50%;
+            margin-top: -200px;
+            opacity: 0.8;
+        }
+        .header {
+            height: 130px;
+            width: auto;
+            text-align: center;
+            height: 25%;
+        }
+        .header img {
+            height: 120px;
+            width: auto;
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+        .container h1 {
+            text-align: center;
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+        .container input {
+            width: 320px;
+            display: block;
+            height: 45px;
+            border: 0;
+            outline: 0;
+            padding: 6px 10px;
+            line-height: 24px;
+            border-radius: 10px;
+            margin: 32px auto;
+            -webkit-transition: all 0s ease-in 0.1ms;
+            -moz-transition: all 0s ease-in 0.1ms;
+            transition: all 0s ease-in 0.1ms;
+        }
+        .container .in {
+            border-radius: 20px;
+        }
+        .container input[type="text"] , .container input[type="password"]  {
+            background-color: #FFFFFF;
+            font-size: 16px;
+            color: #50a3a2;
+        }
+        .container input[type='submit'] {
+            font-size: 16px;
+            letter-spacing: 2px;
+            color: #666666;
+            background-color: #FFFFFF;
+        }
+        .container input:focus {
+            width: 400px;
+        }
+        .container input[type='submit']:hover {
+            cursor: pointer;
+            width: 400px;
+        }
+
+
+
+        @keyframes square {
+            0%  {
+                    -webkit-transform: translateY(0);
+                    transform: translateY(0)
+                }
+            100% {
+                    bottom: 400px;
+                    transform: rotate(600deg);
+                    -webit-transform: rotate(600deg);
+                    -webkit-transform: translateY(-500);
+                    transform: translateY(-500)
+            }
+        }
+        @-webkit-keyframes square {
+            0%  {
+                -webkit-transform: translateY(0);
+                transform: translateY(0)
+            }
+            100% {
+                bottom: 400px;
+                transform: rotate(600deg);
+                -webit-transform: rotate(600deg);
+                -webkit-transform: translateY(-500);
+                transform: translateY(-500)
+            }
+        }
+
